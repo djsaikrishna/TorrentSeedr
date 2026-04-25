@@ -34,6 +34,9 @@ class Settings(BaseSettings):
     )
     page_size: int = Field(default=8, description="Number of items to show per page in lists")
 
+    # Monitoring
+    sentry_dsn: str | None = Field(default=None, description="Sentry DSN for error monitoring")
+
     # Security
     encryption_key: str = Field(..., description="Fernet encryption key for securing credentials")
 

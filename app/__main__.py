@@ -40,12 +40,14 @@ from app.bot.handlers.messages.text_message import text_message_handler
 from app.config import settings
 from app.database import close_db, init_db
 from app.database.session import validate_encryption_key
+from app.services.sentry import init_sentry
 
 logger = get_logger(__name__)
 
 
 async def main():
     """Main function to start the bot."""
+    init_sentry()
     logger.info(f"Starting {settings.bot_name}")
 
     # Initialize database
