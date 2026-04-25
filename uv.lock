@@ -477,11 +477,15 @@ wheels = [
 
 [[package]]
 name = "seedrcc"
-version = "2.0.3"
-source = { git = "https://github.com/hemantapkh/seedrcc#a81ef1b7cc0170a112fcad53a60db1384e85dec9" }
+version = "2.1.1"
+source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
     { name = "httpx" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ca/17/353a7c1d6c95dd608f87fe1c947117cfa6692794e21a504cd09c0e430b6e/seedrcc-2.1.1.tar.gz", hash = "sha256:3ce8bbe06c7c2e3f8a53a79eae16797a875ce478e9258d0f4f7baca946fd1372", size = 113238, upload-time = "2026-04-25T14:51:41.902Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/40/d3/13a8ad04ff7a266749b72bf2ab22de146105a4b236239334b471340752c4/seedrcc-2.1.1-py3-none-any.whl", hash = "sha256:e34c8a839ba0a67ba40fdcc4dab233df54e317ca90d1d5dd8b55c9bf91ff9ddd", size = 24394, upload-time = "2026-04-25T14:51:40.926Z" },
 ]
 
 [[package]]
@@ -526,7 +530,7 @@ requires-dist = [
     { name = "pydantic-settings", specifier = ">=2.12.0" },
     { name = "python-dotenv", specifier = ">=1.2.1" },
     { name = "pyyaml", specifier = ">=6.0.3" },
-    { name = "seedrcc", git = "https://github.com/hemantapkh/seedrcc" },
+    { name = "seedrcc", specifier = ">=2.1.1" },
     { name = "sqlalchemy", specifier = ">=2.0.44" },
     { name = "structlog", specifier = ">=25.5.0" },
     { name = "telethon", specifier = ">=1.42.0" },
