@@ -477,15 +477,15 @@ wheels = [
 
 [[package]]
 name = "seedrcc"
-version = "2.1.1"
+version = "2.1.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
     { name = "httpx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/ca/17/353a7c1d6c95dd608f87fe1c947117cfa6692794e21a504cd09c0e430b6e/seedrcc-2.1.1.tar.gz", hash = "sha256:3ce8bbe06c7c2e3f8a53a79eae16797a875ce478e9258d0f4f7baca946fd1372", size = 113238, upload-time = "2026-04-25T14:51:41.902Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/50/a8/2e1dd86daadb8cdc063960e32571a222eba8e5b10b35d59cde2bf17d42b1/seedrcc-2.1.2.tar.gz", hash = "sha256:9b53ca9f2b4633c6ab9936000bb32648b828fbd62af7ea0f223521afa87b2868", size = 113240, upload-time = "2026-05-01T10:46:37.575Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/40/d3/13a8ad04ff7a266749b72bf2ab22de146105a4b236239334b471340752c4/seedrcc-2.1.1-py3-none-any.whl", hash = "sha256:e34c8a839ba0a67ba40fdcc4dab233df54e317ca90d1d5dd8b55c9bf91ff9ddd", size = 24394, upload-time = "2026-04-25T14:51:40.926Z" },
+    { url = "https://files.pythonhosted.org/packages/05/35/7bac775c7894fcc34c4c8a2bc8eae35a1c64e4bfc34e5b12ebee340d639d/seedrcc-2.1.2-py3-none-any.whl", hash = "sha256:64b8c81c673c5d901151121a5fed1f928a5c89ba6ad84c01e7216872a7c46895", size = 24392, upload-time = "2026-05-01T10:46:36.564Z" },
 ]
 
 [[package]]
@@ -531,7 +531,7 @@ requires-dist = [
     { name = "pydantic-settings", specifier = ">=2.12.0" },
     { name = "python-dotenv", specifier = ">=1.2.1" },
     { name = "pyyaml", specifier = ">=6.0.3" },
-    { name = "seedrcc", specifier = ">=2.1.1" },
+    { name = "seedrcc", specifier = ">=2.1.2" },
     { name = "sentry-sdk", specifier = ">=2.58.0" },
     { name = "sqlalchemy", specifier = ">=2.0.44" },
     { name = "structlog", specifier = ">=25.5.0" },
