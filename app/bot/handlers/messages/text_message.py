@@ -18,7 +18,7 @@ async def text_message_handler(event: events.NewMessage.Event, user: User, trans
     """
     Handles text messages from reply keyboard buttons.
     """
-    text = event.message.text
+    text = event.message.raw_text or ""
 
     # Map button text to the corresponding handler function.
     actions = {

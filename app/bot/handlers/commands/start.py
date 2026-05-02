@@ -13,10 +13,11 @@ from app.utils.language import Translator
 @setup_handler()
 async def start_handler(event: events.NewMessage.Event, user: User, translator: Translator):
     has_accounts = bool(user.default_account_id)
+    text = event.message.raw_text or ""
 
     # Check for deep link start parameter
-    if has_accounts and event.message.text.startswith("/start addTorrent_"):
-        param = event.message.text.split()[1]
+    if has_accounts and text.startswith("/start addTorrent_"):
+        param = text.split()[1]
         torrent_hash = param.split("_")[-1]
         magnet_link = f"magnet:?xt=urn:btih:{torrent_hash}"
 

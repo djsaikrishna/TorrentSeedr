@@ -31,7 +31,7 @@ async def add_torrent_handler(
 ):
     """Handle adding torrent from magnet link."""
     if not magnet_link:
-        magnet_link = extract_magnet_from_text(event.message.text)
+        magnet_link = extract_magnet_from_text(event.message.raw_text or "")
 
     view = render_processing_message(translator)
     status_message = await event.respond(view.message, buttons=view.buttons)

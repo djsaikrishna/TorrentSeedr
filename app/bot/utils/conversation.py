@@ -33,7 +33,7 @@ async def ask(
 
     await conv.send_message(view.message, buttons=view.buttons)
     response_msg = await conv.get_response()
-    response_text = response_msg.text.strip()
+    response_text = (response_msg.raw_text or "").strip()
 
     if response_text == cancel_text:
         await cancel_conversation(conv, translator, has_accounts)
